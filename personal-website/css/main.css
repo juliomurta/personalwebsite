@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 17px;    
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;    
+    padding: 0.5rem;
+    margin-left: 1rem;    
+}
+
+.header__title {
+    font-size: 4rem;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    width: 100%;    
+    font-size: 1.7rem; 
+}
+
+.menu__list {
+    list-style: none;
+    float: right;
+    margin-right: 4rem;
+}
+
+.menu__item {
+    display: inline-block;  
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.maincontent {    
+    margin: 0.5rem;
+}
+
+.articles {
+    width: 77%;
+    float: left;
+}
+
+.article {
+    padding: 0.3rem;
+}
+
+.article__title {
+    font-size: 1.5rem;
+}
+
+.postlist {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.allposts {
+    width: 20%;
+    float: right;
+    padding: 1rem;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    height: 4rem;
+    font-size: 0.8rem;
+    padding-top: 4rem;
+}
