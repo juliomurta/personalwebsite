@@ -8,10 +8,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.header, .footer, .menu {
+    width: 97.8%;    
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
 .header {
-    width: 100%;    
-    padding: 0.5rem;
-    margin-left: 1rem;    
+    padding-top: 1.5rem;
+}
+
+.header--bggreen {
+    background: linear-gradient(to left bottom, 
+                             rgba(126, 213, 111, 0.8), 
+                             rgba(40, 180, 131, 0.8));
+    color: #f7f7f7;
+    font-weight: 900;
 }
 
 .header__title {
@@ -25,37 +37,66 @@ body {
 }
 
 .menu {
-    width: 100%;    
     font-size: 1.7rem; 
+}
+
+.menu--bggray {
+    background: #c4c0c0;
+    color: white;
 }
 
 .menu__list {
     list-style: none;
     float: right;
     margin-right: 4rem;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 .menu__item {
     display: inline-block;  
     padding: 0 2rem;
     margin: 0;
+    height: 100%;
+}
+
+.menu__item--color:hover {
+    background: #938b8b;
 }
 
 .maincontent {    
     margin: 0.5rem;
 }
 
-.articles {
-    width: 77%;
-    float: left;
-}
-
 .article {
-    padding: 0.3rem;
+    padding: 0.3rem;        
 }
 
 .article__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article__subtitle {
+    text-align: right;
+    font-style: italic;
+    font-weight: 300;
+    margin-right: 15px;
+}
+
+.article__subtitle--gray {    
+    color: #c4c0c0;
+}
+
+.article__content {
+    text-align: justify;
+    padding: 5px 15px 5px 0;
+    letter-spacing: 0.1rem;
+}
+
+.allposts {
+    padding: 1rem;
 }
 
 .postlist {
@@ -63,16 +104,55 @@ body {
     margin-top: 0.5rem;
 }
 
-.allposts {
-    width: 20%;
-    float: right;
-    padding: 1rem;
-}
-
 .footer {
-    width: 100%;
     text-align: center;
     height: 4rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     padding-top: 4rem;
+}
+
+.footer--bggray {
+    color: white;
+    background: #c4c0c0;
+}
+
+
+@media only screen and (max-width:414px){
+    .menu__list {
+         display: none;
+    }   
+
+    .article__content {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:840px) {    
+    .articles {
+        width: 77%;
+        float: left;        
+        box-shadow: 5px 0 5px -5px #777
+    }
+
+    .allposts {
+        width: 19%;
+        float: right; 
+    }
+}
+
+@media only screen and (max-width: 839px){
+    .header {
+        text-align: center;
+    }
+
+    .allposts {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .menu__list {
+        margin-right: 0;
+    }
 }
