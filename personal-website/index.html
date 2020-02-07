@@ -13,12 +13,24 @@
     <div class="lateralbar lateralbar--color lateralbar--position">                
         <img src="img/me.png" class="lateralbar__photo lateralbar__photo--radius"/>                
         <div class="lateralbar__socialnetworks"></div>        
+        <div class="burgerbutton burgerbutton--display">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+                <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+                <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+            </svg>
+        </div>
         <ul class="lateralbar__menu lateralbar__menu--color"> 
             <li class="lateralbar__item lateralbar__item--color"><a href="index.html" class="lateralbar__link">Home</a></li>           
             <li class="lateralbar__item lateralbar__item--color"><a href="posts.html" class="lateralbar__link">Artigos</a></li>
             <li class="lateralbar__item lateralbar__item--color"><a href="about.html" class="lateralbar__link">Sobre mim</a></li>
-        </ul>
+        </ul>       
     </div>
+    <ul class="mobilemenu mobilemenu--color mobilemenu--hide"> 
+        <li class="mobilemenu__item mobilemenu__item--color"><a href="index.html" class="mobilemenu__link">Home</a></li>           
+        <li class="mobilemenu__item mobilemenu__item--color"><a href="posts.html" class="mobilemenu__link">Artigos</a></li>
+        <li class="mobilemenu__item mobilemenu__item--color"><a href="about.html" class="mobilemenu__link">Sobre mim</a></li>
+    </ul> 
     <div class="maincontent">
         <div class="article">
             <h1 class="article__title article__title--color">Texto texto texto texto texto</h1>
@@ -44,8 +56,9 @@
             </div>
         </div>        
     </div>
-    <footer class="footer">
-        Criador por <a>Júlio Murta</a> - 2020   
+    <footer class="footer footer--color">
+        Criado por <a>Júlio Murta</a> - 2020   
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

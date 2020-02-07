@@ -36,33 +36,44 @@ body {
 }
 
 .lateralbar__menu {
-    list-style: none;
     margin:30px auto 0;
+}
+
+.lateralbar__menu,
+.mobilemenu {
+    list-style: none; 
     padding: 0;    
     text-align: center;
 }
 
-.lateralbar__item--color {    
+.lateralbar__item--color, 
+.mobilemenu--color {    
     background-color: #ff7400;
+}
+
+.lateralbar__item,
+.mobilemenu__item {    
+    padding: 20px 0;
 }
 
 .lateralbar__link,
 .lateralbar__link:active,
-.lateralbar__link:visited {
+.lateralbar__link:visited,
+.mobilemenu__link,
+.mobilemenu__link:active,
+.mobilemenu__link:visited {
     color: white;
     text-decoration: none;
 }
 
-.lateralbar__link:hover {
+.lateralbar__link:hover,
+.mobilemenu__link:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.lateralbar__item {    
-    padding: 20px 0;
-}
-
-.lateralbar__item--color:hover {
+.lateralbar__item--color:hover,
+.mobilemenu__item--color:hover {
     line-height: 100%;
     width: 100%;
     background-color: #fc8726;
@@ -149,6 +160,18 @@ body {
     color: #ff4f00;    
 }
 
+.burgerbutton--display {
+    display: none;
+}
+
+.mobilemenu--hide {
+    display: none;
+}
+
+.mobilemenu--show {
+    display: block;
+}
+
 @media only screen and (max-width:414px){
     
     .lateralbar__photo {
@@ -187,4 +210,20 @@ body {
         padding: 0;
         margin: 30px auto 0;
     }    
+
+    .burgerbutton {        
+        cursor: pointer;
+        top:20px;
+        right:20px;
+        height: 30px;
+        width: 30px;
+    } 
+
+    .burgerbutton--display {        
+        display: block;
+        float: right;
+        top: 60px;
+        position: absolute;
+        width: 10%;
+    }
 }
