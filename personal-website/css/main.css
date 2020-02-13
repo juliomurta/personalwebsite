@@ -33,6 +33,8 @@ body {
 .lateralbar__photo--radius {
     border-radius: 50%;
     background-color: white;
+    border: 5px solid #eee;
+    box-shadow: inset 0 -10px 30px #777;
 }
 
 .lateralbar__menu {
@@ -79,9 +81,26 @@ body {
     background-color: #fc8726;
 }
 
-.lateralbar__photo, 
-.lateralbar__socialnetworks {
+.lateralbar__photo {
     margin: 0 auto;
+}
+
+.socialnetworks {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialnetworks__link {
+    font-size: 0.7rem;    
+    padding: 3px;    
+    margin: 0 2px;
+}
+
+.socialnetworks__link--color {
+    color:white;
+    background: #fc8726;
 }
 
 .maincontent {        
